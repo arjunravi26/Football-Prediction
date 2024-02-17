@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #fafbfa;
+    /* Dark Green */
+    --secondary-color: #9fe11b;
+    /* Yellow Green */
+    --accent-color: #FFFFFF;
+    /* Gold */
+    --text-color: #FFFFFF;
+    /* White */
+
+}
+/* wp4908754.jpg */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url('../soccer-ball-lawn-with-copy-space_916626-5146.avif') no-repeat center center fixed;
+    color: var(--text-color);
+    background-size: cover;
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(249, 223, 223, 0.1);
+    margin-top: 20px;
+}
+
+
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content {
+    margin-top: 75px;
+    background: var(--secondary-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    transition: transform 0.3s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+
+}
+
+.content:hover {
+    transform: scale(1.05);
+}
+
+.prediction {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+    animation: pulse 1s infinite alternate;
+
+}
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.02);
+    }
+}
+
+button {
+    margin-left:600px;
+    margin-top:15px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #004d00; /* Dark Green */
+    transform: scale(1.1); /* Increase size by 10% */
+}
+
+img {
+    max-width: 100%;
+    grid-row: span 2;
+}

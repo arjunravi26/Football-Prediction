@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>English Premium League Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/index.css">
+
+</head>
+
+<body>
+  <div class="content">
+    <form method="post" action="/submit" class="formcalss">
+      <div class="banner">
+        <h1>ENGLISH PREMIUM LEAGUE</h1>
+      </div>
+      <div class="position-item">
+        <!-- Home Team -->
+        <fieldset>
+          ...
+          {% set teams = ['Charlton', 'Chelsea', 'Coventry', 'Derby', 'Leeds', 'Leicester',
+          'Liverpool', 'Sunderland', 'Tottenham', 'Man United', 'Arsenal',
+          'Bradford', 'Ipswich', 'Middlesbrough', 'Everton', 'Man City',
+          'Newcastle', 'Southampton', 'West Ham', 'Aston Villa', 'Bolton',
+          'Blackburn', 'Fulham', 'Birmingham', 'Middlesboro', 'West Brom',
+          'Portsmouth', 'Wolves', 'Norwich', 'Crystal Palace', 'Wigan',
+          'Reading', 'Sheffield United', 'Watford', 'Hull', 'Stoke',
+          'Burnley', 'Blackpool', 'QPR', 'Swansea', 'Cardiff', 'Bournemouth'] %}
+          <legend>Home Team</legend>
+          <div class="item">
+            <label for="hometeam">Team Name<span class="required">*</span></label>
+            <select name="hometeam" id="hometeam" required>
+              <option value="">--select--</option>
+              {% for team in teams: %}
+              <option value="{{team}}">{{team}}</option>
+              {% endfor %}            </select>
+          </div>
+          <div class="item">
+            <label for="htp">Points<span class="required">*</span></label>
+            <input name="htp" id="htp" required placeholder="Eg: 15" type="number">
+          </div>
+          <div class="item">
+            <label for="htlp">League Position<span class="required">*</span></label>
+            <input name="htlp" id="htlp" required placeholder="Eg: 3" type="number">
+          </div>
+        </fieldset>
+        <fieldset>
+          ...
+          <legend>Home Matches</legend>
+          <div class="item">
+            <label for="hm1">Home Match 1<span class="required">*</span></label>
+            <select name="hm1" id="hm1" required>
+              <option value="" disabled selected>Select outcome</option>
+              <option value="Win">Win</option>
+              <option value="Lose">Lose</option>
+              <option value="Draw">Draw</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="hm2">Home Match 2<span class="required">*</span></label>
+            <select name="hm2" id="hm2" required>
+              <option value="" disabled selected>Select outcome</option>
+              <option value="Win">Win</option>
+              <option value="Lose">Lose</option>
+              <option value="Draw">Draw</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="hm3">Home Match 3<span class="required">*</span></label>
+            <select name="hm3" id="hm3" required>
+              <option value="" disabled selected>Select outcome</option>
+              <option value="Win">Win</option>
+              <option value="Lose">Lose</option>
+              <option value="Draw">Draw</option>
+            </select>
+          </div>
+        </fieldset>
+        
+        <!-- Away Team -->
+        <fieldset>
+          ...
+
+          <legend>Away Team</legend>
+          <div class="item">
+            <label for="awayteam">Team Name<span class="required">*</span></label>
+            <select name="awayteam" id="awayteam" required>
+              <option value="">--select--</option>
+              {% for team in teams: %}
+              <option value="{{team}}">{{team}}</option>
+              {% endfor %}            </select>
+          </div>
+          <div class="item">
+            <label for="atp">Points<span class="required">*</span></label>
+            <input name="atp" id="atp" required placeholder="Eg: 10" type="number">
+          </div>
+          <div class="item">
+            <label for="atlp">League Position<span class="required">*</span></label>
+            <input name="atlp" id="atlp" required placeholder="Eg: 7" type="number">
+          </div>
+        </fieldset>
+        <!-- Home Team -->
+
+        <!-- Away Team -->
+        <fieldset> 
+          ...
+          <legend>Away Matches</legend>
+          <div class="item">
+            <label for="am1">Away Match 1<span class="required">*</span></label>
+            <select name="am1" id="am1" required>
+              <option value="" disabled selected>Select outcome</option>
+              <option value="Win">Win</option>
+              <option value="Lose">Lose</option>
+              <option value="Draw">Draw</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="am2">Away Match 2<span class="required">*</span></label>
+            <select name="am2" id="am2" required>
+              <option value="" disabled selected>Select outcome</option>
+              <option value="Win">Win</option>
+              <option value="Lose">Lose</option>
+              <option value="Draw">Draw</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="am3">Away Match 3<span class="required">*</span></label>
+            <select name="am3" id="am3" required>
+              <option value="" disabled selected>Select outcome</option>
+              <option value="Win">Win</option>
+              <option value="Lose">Lose</option>
+              <option value="Draw">Draw</option>
+            </select>
+          </div>
+        </fieldset>
+        
+        <div class="sub-btn">
+          <input type="submit" value="Predict">
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

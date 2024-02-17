@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Football Match Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/result.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Football Match Prediction</h1>
+        </div>
+        <div class="content">
+            <img src="../static/soccer-ball-lawn-with-copy-space_916626-5146.avif" alt="Football Image">
+            <p class="prediction">{{result_text}}</p>
+        </div>
+
+        <a href="{{ url_for('index') }}" class="back-button">
+            <button><i class="fas fa-arrow-left"></i> Back to Prediction</button>
+        </a>
+        <a href="{{ url_for('home') }}" class="back-button">
+            <button><i class="fas fa-home"></i> Back to Home</button>
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    /* background: linear-gradient(to right, rgba(33, 32, 32, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('../soccer-ball-lawn-with-copy-space_916626-5146.avif'); */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-left: 100px;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+
+}
+.logo {
+    height: 150px; /* Adjust based on your preference */
+    width: 150px; /* Keeps the aspect ratio of your logo */
+    position: absolute; /* Allows you to position the logo anywhere in the container */
+    top: 50; /* Positions the logo 50px from the top of the container */
+    left: 135px; /* Positions the logo 50px from the left of the container */
+    border-radius: 70px; /* Rounds the corners of your logo */
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Adds a shadow for a 3D effect */
+    transition: transform .2s; /* Animation */
+}
+main{
+    width: 100%;
+    background: linear-gradient(to right, rgba(33, 32, 32, 0.2), rgba(0, 0, 0, 0.35)), url('../soccer-ball-lawn-with-copy-space_916626-5146.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo when hovered */
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 90px;
+    position: relative;
+    top: 50px;
+
+    /* Adjust this value to move the content block down */
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 500px;
+    padding-top: 40px;
+}
+
+/* .h1 {
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.p {
+    margin-top: 0;
+    line-height: 1.6;
+}
+... rest of your CSS ... */
+
+.h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-align: left;
+    /* Align the text to the left */
+    letter-spacing: 1.1;
+}
+
+.p {
+    margin-top: 0;
+    line-height: 1.6;
+    text-align: left;
+    /* Align the text to the left */
+    width: 100%;
+    /* Limit the width to make the text split into two lines */
+}
+
+/* ... rest of your CSS ... */
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    /* margin-left: 250px; */
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ee1e46;
+    border-radius: 5.5px;
+    box-shadow: 20px 10px 25px 30px rgba(64, 64, 64, 0.1);
+    transition: transform 0.5s ease;
+    width: 156px;
+    height: 48px;
+}
+
+.btn:hover {
+    transform: scale(1.12);
+    transition: transform 0.7s ease;
+    box-shadow: 20px 10px 25px 35px rgba(64, 64, 64, 0.11);
+
+}

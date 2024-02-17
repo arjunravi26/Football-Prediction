@@ -1,0 +1,206 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #ECF0F1;
+    --font-color: #333;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* wp1936574.webp wp1936644.webp linear-gradient(to bottom, rgba(27, 225, 60, 0.1), rgba(251, 251, 250, 0.1)),*/
+body {
+    font-family: var(--font-family);
+    background: url('../wp1936574.webp') no-repeat center center fixed ;
+    background-size: cover;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--font-color);
+    perspective: 1000px;
+    padding: 1px 5px; 
+    overflow: hidden;
+
+}
+
+.content {
+    /* margin-top: 30px; */
+    width: 80%;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 10px 30px 20px 35px rgba(16, 16, 16, 0.7);
+    transform: translateY(50px);
+    border-radius: 15px;
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-in-out forwards;
+    border: 1px solid #333;
+    background-color: rgba(249, 255, 247, 0.15);
+    height: 95%;
+    transform: translateZ(0) scale(1);
+    transform: rotateY(20deg) translateZ(50px);
+    transition: transform 0.5s;
+
+}
+
+.content:hover {
+    /* Add hover effect to animate the 3D transformation */
+    transform: rotateY(0deg) translateZ(0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner {
+    background-color: rgb(175, 221, 78);
+
+    /* background-color: rgba(136, 188, 33, 0.9); */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 10px 10px 30px 15px rgba(0, 0, 0, 0.4);
+    height: min-content;
+}
+
+.position-item {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.item input,
+.item select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.5px solid var(--primary-color);
+}
+
+.sub-btn {
+    text-align: center;
+    width: 100%;
+    text-shadow: #2C3E50;
+    font-size: 50px;
+}
+/*  rgb(140, 200, 11) */
+.sub-btn input {
+    padding: 8px 15px;
+    background-color: white;
+    border: none;
+    color: var(--font-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 30px auto;
+    display: block;
+    width: 130px;
+    height: 50px;
+    transition-duration: 0.4s;
+    font-size: 15px;
+    box-shadow: 10px 10px 30px 15px rgb(98, 136, 22,0.05);
+
+}
+
+.sub-btn input:hover {
+    transform: scale(1.13);
+    background-color: white;
+    color: var(--font-color);
+    border-radius: 6px;
+    transition: background-color 0.5s ease;
+    font-size: 15.1px;
+    box-shadow: 10px 10px 30px 15px rgb(98, 136, 22,0.1);
+
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+
+    .position-item {
+        flex-direction: column;
+    }
+
+    .item {
+        flex-basis: 100%;
+    }
+}
+
+.item-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-row .item {
+    flex-basis: calc(33% - 10px);
+    max-width: calc(33% - 10px);
+}
+
+p,
+label,
+legend {
+    color: white;
+}
+
+.item select {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.5px solid var(--primary-color);
+    background-color: var(--secondary-color); /* Added background color */
+    box-sizing: border-box; 
+  }
+  
+  /* Customize the dropdown arrow */
+  .item select::-ms-expand,
+  .item select::-webkit-select {
+    display: none;
+  }
+  
+  /* Style the dropdown options */
+  .item select option {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+  }
+  
+  /* Style the selected option */
+  .item select option:checked {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* Adjust styles for hover and focus states */
+  .item select:hover,
+  .item select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(44, 62, 80, 0.5);
+  }
+
+
+  
